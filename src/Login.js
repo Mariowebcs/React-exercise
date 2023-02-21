@@ -55,7 +55,7 @@ export default class Login extends React.Component {
           onChange={this.changeCheckBoxHandler}
           checked={this.state.rememberMe}
         />
-        <button onClick={this.clickHandler}>Login</button>
+        <button onClick={this.clickHandler}>Login now</button>
       </div>
     );
   }
