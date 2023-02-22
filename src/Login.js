@@ -14,6 +14,13 @@ export default class Login extends React.Component {
     })
   }
 
+  changeCheckBoxHandler = (event) => {
+    const name = event.target.name;
+    this.setState({
+        [name] : event.target.checked
+    })
+  }
+
 
   clickResetHandler = () => {
     this.setState({
@@ -24,7 +31,7 @@ export default class Login extends React.Component {
   }
 
   clickHandler = () => {
-    const loginData = {
+      const loginData = {
       email: this.state.email,
       password: this.state.password,
       rememberMe: this.state.rememberMe,
@@ -56,7 +63,7 @@ export default class Login extends React.Component {
           type="checkbox"
           id="rememberMe"
           name="rememberMe"
-          onChange={this.changeInputHandler}
+          onChange={this.changeCheckBoxHandler}
           checked={this.state.rememberMe}
         />
         <button onClick={this.clickHandler}>Login now</button>
