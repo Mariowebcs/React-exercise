@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import GithubUserList from "./GithubUserList";
 
 const App = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div>
+      <GithubUserList />
+    </div>
+  );
 };
-
 
 export default App;
