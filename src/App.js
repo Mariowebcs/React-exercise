@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import DisplayLanguage from "./DisplayLanguage";
 
 const App = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div>
+      <DisplayLanguage />
+    </div>
+  );
 };
-
 
 export default App;
